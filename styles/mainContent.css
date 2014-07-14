@@ -1,0 +1,89 @@
+.mainContent .content
+{
+    padding: 80px 0 80px 0;
+    overflow: hidden;
+}
+
+.mainContent h2
+{
+    margin:0;
+    display: inline-block;
+    width:650px;
+	font:21px FjallaOne;
+	color: #202628;
+	margin-left:2px;
+	letter-spacing: 0.035em;
+	line-height: 24px;
+    text-transform: uppercase;
+}
+
+
+.mainContent  .bigImage{
+	float:right;	
+}
+
+.mainContent .title{
+	margin-top: 26px;
+}
+
+.mainContent .title h3
+{
+    margin:6px 0 9px 0;
+	font: 20px Lato;
+	color: #e84c3d;
+	height: 24px;
+	letter-spacing: 0.006em;
+}
+
+.mainContent .title:before, .mainContent .title:after 
+{
+    background: #e7e7e7;
+    width: 770px;
+    height: 1px;
+    content: ' ';
+    display: inline-block;
+}
+
+.mainContent .section{
+	width: 370px;
+	display: inline-block;
+}
+
+.mainContent .content .section:last-child
+{
+    margin-left: 29px;
+}
+
+.mainContent h4{
+	font: 16px Lato;
+    letter-spacing: -0.04em;
+    font-weight: bold;
+    color: #202628;
+    margin: 23px 0 0 0;
+}
+
+.mainContent p{
+	font: 14px Lato;
+	color: #bfc2c3;
+	margin: 6px 0 0 0;
+    letter-spacing: -0.008em;
+    line-height:24px;
+}
+
+.mainContent .section a{
+	background: #e84c3d;
+	border: 0;
+	border-radius: 20px;
+	font: 14px Oswald;
+	color: #fdf3f2;
+	display: inline-block;
+    margin: 35px 0 0 0;
+    padding: 7px 20px;
+    text-transform: uppercase;
+    text-decoration:none;
+}
+
+.mainContent .section a:hover
+{
+    text-decoration:none;
+}
