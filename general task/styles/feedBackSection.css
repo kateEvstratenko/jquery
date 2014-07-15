@@ -27,19 +27,21 @@
     display: inline-block;
 }
 
-.feedBackSection .subsectionContent {
+.feedBackSection .subsectionContent
+{
     padding-top: 30px;
     padding-bottom: 22px;
 }
 
-.feedBackSection .sectionText{
-	width: 270px;
-	font: 14px Lato;
-	letter-spacing: -0.01em;
-	line-height: 24px;
-	display: inline-block;
-	padding: 5px 0 0 30px;
- } 
+.feedBackSection .sectionText
+{
+    width: 270px;
+    font: 14px Lato;
+    letter-spacing: -0.01em;
+    line-height: 24px;
+    display: inline-block;
+    padding: 5px 0 0 30px;
+}
 
 .feedBackSection .subsection .sectionText p
 {
@@ -48,93 +50,103 @@
 
 .feedBackSection .subsection .reference a
 {
-    text-decoration:none;
+    text-decoration: none;
     word-spacing: 0.4em;
 }
 
-.feedBackSection .subsection .reference a:hover
-{
-    text-decoration:none;
-}
+    .feedBackSection .subsection .reference a:hover
+    {
+        text-decoration: none;
+    }
 
 .feedBackSection .subsection .contacts a
 {
-    color:black;
-    text-decoration:none;
+    color: black;
+    text-decoration: none;
 }
 
-.feedBackSection .subsection .contacts a:hover
+    .feedBackSection .subsection .contacts a:hover
+    {
+        text-decoration: none;
+    }
+
+.feedBackSection .icon
 {
-    text-decoration:none;
+    margin: 0px;
+    margin-top: 30px;
+    vertical-align: top;
+    display: inline-block;
+    width: 27px;
 }
 
-.feedBackSection .icon{
-	margin: 0px;
-	margin-top: 30px;
-	vertical-align: top;
-	display:inline-block;
-	width: 27px;
-}
-
- .feedBackSection .subsectionText
- {
-	width: 270px;
+.feedBackSection .subsectionText
+{
+    width: 270px;
     font: 14px Lato;
     letter-spacing: -0.01em;
     line-height: 24px;
     display: inline-block;
     padding: 25px 0 25px 22px;
- }
- 
- .feedBackSection .sectionText a{
-	color: #e84c3d;
- }
- 
-.feedBackSection .content .section{
-	width: 370px;
-	display: inline-block;
-	vertical-align: top;
+}
+
+.feedBackSection .sectionText a
+{
+    color: #e84c3d;
+}
+
+.feedBackSection .content .section
+{
+    width: 370px;
+    display: inline-block;
+    vertical-align: top;
     margin-left: 30px;
 }
 
-.feedBackSection .content .section:first-child {
-    margin-left: 0;
-}
+    .feedBackSection .content .section:first-child
+    {
+        margin-left: 0;
+    }
 
-.feedBackSection .section h3{
-	font: 21px FjallaOne;
+.feedBackSection .section h3
+{
+    font: 21px FjallaOne;
     text-transform: uppercase;
-	letter-spacing: 0.033em;
-	margin: 0 0 25px 0;
+    letter-spacing: 0.033em;
+    margin: 0 0 25px 0;
 }
 
-.feedBackSection .section h4{
-	font: 16px Lato;
-	margin: 0 0 3px 0;
-	font-weight: bold;
-	letter-spacing: -0.04em;
-	color: #e84c3d;
+.feedBackSection .section h4
+{
+    font: 16px Lato;
+    margin: 0 0 3px 0;
+    font-weight: bold;
+    letter-spacing: -0.04em;
+    color: #e84c3d;
 }
 
-.feedBackSection .subsection .contacts{
-	margin: 0;
+.feedBackSection .subsection .contacts
+{
+    margin: 0;
 }
 
-.feedBackSection .section form{
-	background: #e7e7e7;
-	padding: 30px;
-	font: 14px Lato;
-	height: 330px; /* 390 - 4*margin-top */
-	border-radius: 3px;
+.feedBackSection .section form
+{
+    background: #e7e7e7;
+    padding: 30px;
+    font: 14px Lato;
+    height: 330px; /* 390 - 4*margin-top */
+    border-radius: 3px;
 }
 
-.feedBackSection .section form p{
-	line-height: 24px;
-    margin: -5px 0 23px 0;
-	letter-spacing: -0.004em;
-}
+    .feedBackSection .section form p
+    {
+        line-height: 24px;
+        margin: -5px 0 23px 0;
+        letter-spacing: -0.004em;
+    }
 
-.feedBackSection input[type="text"]{
+.feedBackSection input[type="text"]
+{
     border-width: 0;
     width: 295px;
     border-radius: 50px;
@@ -147,7 +159,8 @@
     padding-left: 15px;
 }
 
-.feedBackSection textarea{
+.feedBackSection textarea
+{
     width: 296px;
     border-radius: 10px;
     border-width: 0;
@@ -161,7 +174,8 @@
     line-height: 20px;
 }
 
-.feedBackSection button{
+.feedBackSection button
+{
     background-color: #e84c3d;
     background-image: url(../images/arrow.png);
     background-repeat: no-repeat;
