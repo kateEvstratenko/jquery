@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="styles/style.css"/>
+        <title>PageTitle</title>
+    </head>
+
+    <body>
+        <div class="content">
+            <form action="#" method="post" class="optionsForm">
+                <div class="section">
+                    <p>
+                        <label for="message">Text of notice: </label>
+                    </p>
+                    <textarea id="message"></textarea>
+                    <input type="button" value ="Show" />
+                </div>
+
+                <div class ="section">
+                    <p>Type of message: </p>
+                    <div>
+                        <label for='success'>Success</label>
+                        <input type="radio" class="messageType" name="messageType" id="success" value="success" checked="checked">
+                    </div>
+                    <div>
+                        <label for='info'>Info</label>
+                        <input type="radio" class="messageType" name="messageType" id="info" value="info">
+                    </div>
+                    <div>
+                        <label for='warning'>Warning</label>
+                        <input type="radio" class="messageType" name="messageType" id="warning" value="warning">
+                    </div>
+                    <div>
+                        <label for='error'>Error</label>
+                        <input type="radio" class="messageType" name="messageType" id="error" value="error">
+                    </div>
+                </div>
+
+                <div class="section">
+                    <p>Position: </p>
+                    <div>
+                        <label for='positionLeft'>Left</label>
+                        <input type="radio" class="position" name="position" id="positionLeft" value="left" checked="checked">
+                    </div>
+                    <div>
+                        <label for='positionRight'>Right</label>
+                        <input type="radio" class="position" name="position" id="positionRight" value="right">
+                    </div>
+                </div>
+
+                <div class="section">
+                    <p>Delay: </p>
+                    <div>
+                        <input type="text" class="delay" name="delay" id="delay" value="3000">
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        
+        <div class="my">
+            
+        </div>
+        <script src="scripts/jquery-2.1.1.js"></script>
+        <script src="scripts/app.js"></script>
+        <script src="scripts/notice.js"></script>
+    </body>
+
+</html>
