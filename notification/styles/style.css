@@ -32,12 +32,15 @@ body {
     vertical-align: top;
 }
 
-.notice {
+.notification
+{
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
     width: 200px;
     min-height: 20px;
     opacity: 0;
     padding: 10px;
-    margin: 10px 0; 
+    margin: 10px 0;
     position: absolute;
     z-index: 9999;
 }

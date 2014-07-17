@@ -9,7 +9,7 @@
             var $messageType = $('.messageType:checked').get(0);
             var $position = $('.position:checked').get(0);
 
-            $('.content').notice({
+            $('.content').notification({
                 message: $message.value || '',
                 typeMessage: $messageType.value,
                 position: $position.value || '',

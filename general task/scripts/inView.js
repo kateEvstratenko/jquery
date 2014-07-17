@@ -1,19 +1,21 @@
 ﻿(function () {
     $.extend($.expr.pseudos, {
-        inView: function (e) {
+        inView: function (element) {
 
-            var viewTop = $(window).scrollTop();
-            var viewBottom = viewTop + $(window).height();
-            var viewLeft = $(window).scrollLeft();
-            var viewRight = viewLeft + $(window).width();
+            var objectWindow = window;
 
-            var elTop = $(e).offset().top;
-            var elBottom = elTop + $(e).outerHeight();
-            var elLeft = $(e).offset().left;
-            var elRight = elLeft + $(e).outerWidth();
+            var viewTop = $(objectWindow).scrollTop();
+            var viewBottom = viewTop + $(objectWindow).height();
+            var viewLeft = $(objectWindow).scrollLeft();
+            var viewRight = viewLeft + $(objectWindow).width();
 
-            var isInView = (elTop >= viewTop && elBottom <= viewBottom &&
-                            elLeft >= viewLeft && elRight <= viewRight);
+            var elementTop = $(element).offset().top;
+            var elementBottom = elementTop + $(element).outerHeight();
+            var elementLeft = $(element).offset().left;
+            var elementRight = elementLeft + $(element).outerWidth();
+
+            var isInView = (elementTop >= viewTop && elementBottom <= viewBottom &&
+                            elementLeft >= viewLeft && elementRight <= viewRight);
             return isInView;
         }
     });
