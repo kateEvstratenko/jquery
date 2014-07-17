@@ -1,4 +1,6 @@
 ﻿(function () {
+    'use strict';
+
     $.extend($.expr.pseudos, {
         inView: function (element) {
 
@@ -14,8 +16,8 @@
             var elementLeft = $(element).offset().left;
             var elementRight = elementLeft + $(element).outerWidth();
 
-            var isInView = (elementTop >= viewTop && elementBottom <= viewBottom &&
-                            elementLeft >= viewLeft && elementRight <= viewRight);
+            var isInView = elementTop >= viewTop && elementBottom <= viewBottom &&
+                            elementLeft >= viewLeft && elementRight <= viewRight;
             return isInView;
         }
     });

@@ -1,4 +1,10 @@
 (function notification() {
+
+    'use strict';
+
+    var DEFAULT_ANIMATE_SHOW_TIME = 1000;
+    var DEFAULT_ANIMATE_HIDE_TIME = 1000;
+
     $.fn.notification = function (options) {
 
         var settings = $.extend({}, $.fn.notification.defaults, options);
@@ -11,7 +17,8 @@
                 text: settings.message
             });
 
-            var positionTop = lastNotification.position() ? Number(lastNotification.position().top + lastNotification.outerHeight(true)) : 0;
+            var positionTop = lastNotification.position() ?
+                Number(lastNotification.position().top + lastNotification.outerHeight(true)) : 0;
 
             newNotification
                 .addClass('notification')
@@ -24,11 +31,11 @@
             newNotification
                 .appendTo(this)
                 .animate({
-                    opacity: "1"
+                    opacity: '1'
                 }, DEFAULT_ANIMATE_SHOW_TIME)
                 .delay(settings.delay)
                 .animate({
-                    opacity: "0"
+                    opacity: '0'
                 }, DEFAULT_ANIMATE_HIDE_TIME);
             
             newNotification.parent().addClass('relative');
@@ -62,9 +69,6 @@
             }, time);
         }
     };
-
-    var DEFAULT_ANIMATE_SHOW_TIME = 500;
-    var DEFAULT_ANIMATE_HIDE_TIME = 500;
     
     $.fn.notification.defaults = {
         message: '',
